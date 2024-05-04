@@ -10,7 +10,7 @@
 
 header{
     background-color: #000103;
-    border: 1px #515052;
+    border: 1px solid #515052;
     margin: 5px; 
 }
 
@@ -47,6 +47,10 @@ header #btnMenu, header label{
     display: none;
 }
 
+main{
+    background-color: #000103;
+}
+
 .logoMenu{
     display: none;
 }
@@ -60,17 +64,18 @@ header #btnMenu, header label{
 }
 
 .positionRelative{
-    height: 300px;
+    height: 600px;
     position: relative;
     background-color: #000103;
+    border: #FFFFFA;
 }
 .positionRelative img {
     display: block;
-    height: 250px;
-    width: 250px;
+    height: 600px;
+    width: 100%;
     object-fit: cover;
     margin: auto;
-    top: 50px;
+    top: 100px;
 }
 
 
@@ -78,21 +83,31 @@ header #btnMenu, header label{
 
 .positionAbsolute{
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding-top: 170px;
+    top: 80%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
+    color: #FFFFFA;
+    text-decoration: none;
+    height: 50px;
+    width: 20vw;
+    background-color: #000103;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
 .positionAbsolute a{
     text-decoration: none ;
     color: #FFFFFA;
-    background-color: #515052;
 }
 
 .card{
@@ -117,6 +132,22 @@ header #btnMenu, header label{
 
 }
 
+.carouselExampleCaptions{
+    height: 400px;
+}
+
+#carouselExampleCaptions {
+    background: #000103;
+    margin: 5px #FFFFFA;
+    max-width: 600px; /* Ajusta el tamaño máximo del carrusel */
+    margin: auto; /* Centra el carrusel horizontalmente */
+}
+
+/* Estilos para hacer que las imágenes del carrusel sean responsivas */
+.carousel-item img {
+    max-width: 100%; /* Hace que las imágenes se adapten al ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de las imágenes */
+}
 
 /* main faq */
 .faqStyle{
@@ -141,9 +172,101 @@ header #btnMenu, header label{
 }
 
 /* main carrito */
+.contenedorCarrito{
+    background-color: #FFFFFA;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.contenedorCompras{
+    background-color: #515052;
+    width: 80vw;
+    justify-content: center;
+    padding: 30px;
+    border:5px solid #000103
+}
+
+.contenedorCarrito h1,h2,h3{
+    color: #FFFFFA;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.botonCompras{
+    display: inline-flex;
+    color: #FFFFFA;
+    text-decoration: none;
+    height: 50px;
+    width: 30vw;
+    background-color: #000103;
+    border-radius:20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: .8rem;
+    border:2px #FFFFFA;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
 
 /* main shop */
+.contenedorShop{
 
+    display: grid;
+    background-color: #FFFFFA;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.grilla{
+    background-color: #FFFFFA;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    border: 3px solid #000103;
+    
+}
+
+.producto{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.grilla{
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.precios{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-family: 10vw;
+}
 /* main usuario */
 .usuarioStyle{
     padding: 30px;
@@ -167,7 +290,7 @@ header #btnMenu, header label{
 }
 
 .inicioSesion{
-    height: 19px;
+    height: 30px;
     width: 181px;
 }
 
@@ -177,9 +300,6 @@ header #btnMenu, header label{
     text-align: center;
 }
 
-#carouselExampleCaptions{
-    background: #000103;
-}
 
 /* footer */
 footer{
@@ -211,6 +331,19 @@ footer div a{
 }
 
 
+@media (max-width:1024px){
+
+    .contenedorShop{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 50px;
+    }
+}
+
+.botonCompras{
+    height: 70px;
+    width: 40vw;
+}
 
 
 @media (max-width: 768px){
@@ -253,12 +386,18 @@ footer div a{
         visibility: hidden;
         transition: visibility 1s, opacity 1s ease;
         opacity: 0;
+        border: 1px #515052;
+        margin: 5px
     }
 
     #btnMenu:checked ~ .menu{
         visibility: visible;
         opacity: 1;
+        z-index: 999;
 
+    }
+    .positionRelative{
+        z-index: 1;
     }
 
     .menu ul{
@@ -268,5 +407,24 @@ footer div a{
         display: none;
 
     }
-   
+    .contenedorShop{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedorCompras, .contenedorAyuda {
+        width: 80%;}
+
+    .botonCompras{
+        height: 80px;
+        width: 70vw;
+}
+    .contenedorAyuda{
+        width: 60vw;
+    }
+
+    .positionAbsolute{
+        width: 80vw;
+
+    }
 }
