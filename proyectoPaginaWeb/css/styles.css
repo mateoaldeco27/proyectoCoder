@@ -1,0 +1,272 @@
+/* estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* header */
+
+header{
+    background-color: #000103;
+    border: 1px #515052;
+    margin: 5px; 
+}
+
+header nav ul{
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 20px;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+header nav ul li a img{
+    width: 100px;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    }
+
+header nav ul li a{
+    text-decoration: none ;
+    color: #FFFFFA;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+
+}
+
+header #btnMenu, header label{
+    display: none;
+}
+
+.logoMenu{
+    display: none;
+}
+
+
+/* main index */
+.main{
+    background-color: #000103;
+    border: 1px #515052;
+    margin: 5px; 
+}
+
+.positionRelative{
+    height: 300px;
+    position: relative;
+    background-color: #000103;
+}
+.positionRelative img {
+    display: block;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    margin: auto;
+    top: 50px;
+}
+
+
+
+
+.positionAbsolute{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 170px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    
+}
+
+.positionAbsolute a{
+    text-decoration: none ;
+    color: #FFFFFA;
+    background-color: #515052;
+}
+
+.card{
+    width: 300px;
+    height: 380px;
+    display: inline-block;
+    border-radius: 0 0 20 20;
+    -webkit-box-shadow: 10px 15px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 15px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 15px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card div{
+    height: 100%;
+    text-align: center;
+
+}
+
+
+/* main faq */
+.faqStyle{
+    padding: 30px;
+    margin: 10px;
+    font-size: 20px;
+    color: #FFFFFA;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    background-color: #000103;
+    height: 100%;
+    width: 100%;
+}
+.block{
+    display: block;
+    margin: 10px; 
+}
+
+.style{
+    text-decoration: underline;
+}
+
+/* main carrito */
+
+/* main shop */
+
+/* main usuario */
+.usuarioStyle{
+    padding: 30px;
+    margin: 10px;
+    font-size: 20px;
+    color: #FFFFFA;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    background-color: #000103;
+    height: 100%;
+    width: 100%;
+
+}
+
+.olvidarContraseña{
+    height: 15px;
+    width: 181px;
+    font-size: 10px;
+    text-align: right;
+}
+
+.inicioSesion{
+    height: 19px;
+    width: 181px;
+}
+
+.crearCuenta{
+    width: 181px;
+    font-size: 10px;
+    text-align: center;
+}
+
+#carouselExampleCaptions{
+    background: #000103;
+}
+
+/* footer */
+footer{
+    background-color: #000103;
+    border: 1px #515052;
+    margin: 5px; 
+}
+
+footer div{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    color: #FFFFFA;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    background-color: #515052;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+footer div a{
+    text-decoration: none ;
+    color: #FFFFFA;
+    background-color: #000103;
+    
+}
+
+
+
+
+@media (max-width: 768px){
+    .faqStyle{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .faqStyle .style{
+        width: 100%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+    header .logoMenu{
+        display: block;
+        width: 100px;
+        margin-left: 25px;
+    }
+    
+    header label{
+        display: block;
+        position: relative;
+        right: 25px;
+
+    }
+    header label img{
+        width: 50px;
+    }
+    .menu{
+        position: absolute;
+        top: 102px;
+        background-color: #000103;
+        width: 100%;
+        visibility: hidden;
+        transition: visibility 1s, opacity 1s ease;
+        opacity: 0;
+    }
+
+    #btnMenu:checked ~ .menu{
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+    .logoUl{
+        display: none;
+
+    }
+   
+}
