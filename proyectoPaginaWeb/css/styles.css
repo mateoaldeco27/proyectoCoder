@@ -363,10 +363,15 @@ footer div a{
 
     }
     
-    header .logoMenu{
+    header .logoMenu {
         display: block;
         width: 100px;
         margin-left: 25px;
+    }
+
+    header .logoMenu img{
+        display: block;
+        width: 100px;
     }
     
     header label{
