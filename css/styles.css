@@ -455,14 +455,15 @@ footer div li img{
         height: 70px;
         width: 50vw;
         font-size: 1rem;
-}
+
     }
     .contenedorAyuda{
         width: 70vw;
     }
 
-    .positionAbsolute{
-        width: 80vw;
+    .positionAbsolute a{
+        font-size: .7rem;
+        width: 100%;
 
     }
     .usuarioStyle{
@@ -485,3 +486,9 @@ footer div li img{
         display: contents;
         justify-content: center;
     }
+
+    footer div li{
+        width: 15%;
+        justify-items: center;
+    }
+}
