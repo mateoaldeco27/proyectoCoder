@@ -173,6 +173,7 @@ main{
 
 /* main carrito */
 .contenedorCarrito{
+    display: grid;
     background-color: #FFFFFA;
     width: 100%;
     height: 100%;
@@ -186,11 +187,16 @@ main{
 }
 
 .contenedorCompras{
+    display: grid;
     background-color: #515052;
     width: 80vw;
     justify-content: center;
     padding: 30px;
-    border:5px solid #000103
+    border:5px solid #000103;
+}
+
+.contenedorAyuda{
+    margin: 0 auto;
 }
 
 .contenedorCarrito h1,h2,h3{
@@ -330,6 +336,20 @@ footer div a{
     
 }
 
+.btn-whatsapp {
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    color: #fff; /* Color del texto */
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e; /* Color de fondo al pasar el mouse */
+}
+
 
 @media (max-width:1024px){
 
@@ -418,14 +438,21 @@ footer div a{
     }
 
     .contenedorCompras, .contenedorAyuda {
-        width: 80%;}
+        display: grid;
+        width: 80%;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
 
     .botonCompras{
-        height: 80px;
-        width: 70vw;
+        height: 70px;
+        width: 50vw;
+        font-size: 1rem;
 }
+    }
     .contenedorAyuda{
-        width: 60vw;
+        width: 70vw;
     }
 
     .positionAbsolute{
@@ -452,4 +479,3 @@ footer div a{
         display: contents;
         justify-content: center;
     }
-}
