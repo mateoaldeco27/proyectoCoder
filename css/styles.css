@@ -491,4 +491,10 @@ footer div li img{
         width: 15%;
         justify-items: center;
     }
+    .block{
+        display: block;
+    }
+    .botonSuscribirse{
+        display: inline-block;
+    }
 }
