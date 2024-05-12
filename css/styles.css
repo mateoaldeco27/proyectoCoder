@@ -432,4 +432,24 @@ footer div a{
         width: 80vw;
 
     }
+    .usuarioStyle{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-content:center ;
+    }
+    input.inicioSesion{
+        display: grid;
+        width: 100%;
+        justify-items: center;
+    }
+    .olvidarContraseña{
+        display: contents;
+        justify-content: center;
+
+    }
+    .crearCuenta {
+        display: contents;
+        justify-content: center;
+    }
 }
