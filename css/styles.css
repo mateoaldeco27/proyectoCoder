@@ -81,7 +81,7 @@ main{
 
 
 
-.positionAbsolute{
+main section div.positionAbsolute{
     position: absolute;
     top: 80%; 
     left: 50%; 
@@ -323,18 +323,24 @@ footer div{
     font-optical-sizing: auto;
     font-weight: 500;
     background-color: #515052;
-    height: 200px;
+    height: 100px;
     width: 100%;
     text-align: center;
     
 }
 
-footer div a{
-    text-decoration: none ;
-    color: #FFFFFA;
-    background-color: #000103;
-    
+footer div li{
+    display: inline-block;
+    width: 5%;
+
 }
+
+footer div li img{
+    width: 100%;
+    height: 100%;
+}
+
+
 
 .btn-whatsapp {
     background-color: #25d366; /* Color de fondo de WhatsApp */
