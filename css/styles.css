@@ -278,6 +278,10 @@ main section div.positionAbsolute{
 }
 /* main usuario */
 .usuarioStyle{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     padding: 30px;
     margin: 10px;
     font-size: 20px;
@@ -293,18 +297,19 @@ main section div.positionAbsolute{
 
 .olvidarContraseña{
     height: 15px;
-    width: 181px;
+    width: 100%;
     font-size: 10px;
     text-align: right;
 }
 
 .inicioSesion{
     height: 30px;
-    width: 181px;
+    width: 100%;
+    justify-items: center;
 }
 
 .crearCuenta{
-    width: 181px;
+    width: 100%;
     font-size: 10px;
     text-align: center;
 }
