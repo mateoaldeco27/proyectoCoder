@@ -166,7 +166,10 @@ main section div.positionAbsolute{
     display: block;
     margin: 10px; 
 }
-
+.botonSuscribirse{
+    display: block;
+    margin: 10px;
+}
 .style{
     text-decoration: underline;
 }
