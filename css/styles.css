@@ -1,21 +1,21 @@
 /* estilos generales*/
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-}
+} */
 
 /* header */
 
-header{
+/* header{
     background-color: #000103;
     border: 1px solid #515052;
-    margin: 5px; 
-}
+    margin: 5px;
+} */
 
-header nav ul{
-    
+/* header nav ul{
+
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -47,20 +47,22 @@ header #btnMenu, header label{
     display: none;
 }
 
-main{
-    background-color: #000103;
-}
+
 
 .logoMenu{
     display: none;
-}
+} */
 
 
 /* main index */
+
+/* main{
+    background-color: #000103;
+}
 .main{
     background-color: #000103;
     border: 1px #515052;
-    margin: 5px; 
+    margin: 5px;
 }
 
 .positionRelative{
@@ -83,9 +85,9 @@ main{
 
 main section div.positionAbsolute{
     position: absolute;
-    top: 80%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -102,7 +104,7 @@ main section div.positionAbsolute{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .positionAbsolute a{
@@ -140,17 +142,17 @@ main section div.positionAbsolute{
     background: #000103;
     margin: 5px #FFFFFA;
     max-width: 600px; /* Ajusta el tamaño máximo del carrusel */
-    margin: auto; /* Centra el carrusel horizontalmente */
-}
+    /* margin: auto; Centra el carrusel horizontalmente
+} */
 
 /* Estilos para hacer que las imágenes del carrusel sean responsivas */
-.carousel-item img {
+/* .carousel-item img {
     max-width: 100%; /* Hace que las imágenes se adapten al ancho del contenedor */
-    height: auto; /* Mantiene la relación de aspecto de las imágenes */
-}
+    /* height: auto; /* Mantiene la relación de aspecto de las imágenes */
+
 
 /* main faq */
-.faqStyle{
+/* .faqStyle{
     padding: 30px;
     margin: 10px;
     font-size: 20px;
@@ -164,7 +166,7 @@ main section div.positionAbsolute{
 }
 .block{
     display: block;
-    margin: 10px; 
+    margin: 10px;
 }
 .botonSuscribirse{
     display: block;
@@ -172,9 +174,9 @@ main section div.positionAbsolute{
 }
 .style{
     text-decoration: underline;
-}
+} */
 
-/* main carrito */
+/* main carrito
 .contenedorCarrito{
     display: grid;
     background-color: #FFFFFA;
@@ -185,7 +187,7 @@ main section div.positionAbsolute{
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
 
 }
 
@@ -227,11 +229,11 @@ main section div.positionAbsolute{
     justify-content: center;
 
 
-}
+} */
 
 
 
-/* main shop */
+/* main shop
 .contenedorShop{
 
     display: grid;
@@ -247,7 +249,7 @@ main section div.positionAbsolute{
     height: 100%;
     display: grid;
     border: 3px solid #000103;
-    
+
 }
 
 .producto{
@@ -275,9 +277,9 @@ main section div.positionAbsolute{
     font-optical-sizing: auto;
     font-weight: 500;
     font-family: 10vw;
-}
+} */
 /* main usuario */
-.usuarioStyle{
+/* .usuarioStyle{
     display: grid;
     justify-content: center;
     text-align: center;
@@ -312,14 +314,14 @@ main section div.positionAbsolute{
     width: 100%;
     font-size: 10px;
     text-align: center;
-}
+} */
 
 
-/* footer */
+/* footer
 footer{
     background-color: #000103;
     border: 1px #515052;
-    margin: 5px; 
+    margin: 5px;
 }
 
 footer div{
@@ -334,7 +336,7 @@ footer div{
     height: 100px;
     width: 100%;
     text-align: center;
-    
+
 }
 
 footer div li{
@@ -346,41 +348,22 @@ footer div li{
 footer div li img{
     width: 100%;
     height: 100%;
-}
+} */
 
 
 
-.btn-whatsapp {
-    background-color: #25d366; /* Color de fondo de WhatsApp */
-    color: #fff; /* Color del texto */
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-whatsapp:hover {
-    background-color: #128c7e; /* Color de fondo al pasar el mouse */
-}
-
-
-@media (max-width:1024px){
+/* @media (max-width:1024px){
 
     .contenedorShop{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         border: 50px;
     }
-}
-
-.botonCompras{
-    height: 70px;
-    width: 40vw;
-}
+} */
 
 
-@media (max-width: 768px){
+
+/* @media (max-width: 768px){
     .faqStyle{
         flex-direction: column;
         align-items: center;
@@ -389,14 +372,14 @@ footer div li img{
     }
     .faqStyle .style{
         width: 100%;
-    }
-    header{
+    } */
+    /* header{
         display: flex;
         justify-content: space-between;
         align-items: center;
 
     }
-    
+
     header .logoMenu {
         display: block;
         width: 100px;
@@ -407,7 +390,7 @@ footer div li img{
         display: block;
         width: 100px;
     }
-    
+
     header label{
         display: block;
         position: relative;
@@ -427,15 +410,15 @@ footer div li img{
         opacity: 0;
         border: 1px #515052;
         margin: 5px
-    }
+    } */
 
-    #btnMenu:checked ~ .menu{
+    /* #btnMenu:checked ~ .menu{
         visibility: visible;
         opacity: 1;
         z-index: 999;
 
-    }
-    .positionRelative{
+    } */
+    /* .positionRelative{
         z-index: 1;
     }
 
@@ -504,5 +487,4 @@ footer div li img{
     }
     .botonSuscribirse{
         display: inline-block;
-    }
-}
+    } */

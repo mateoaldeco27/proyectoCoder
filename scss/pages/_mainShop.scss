@@ -1,0 +1,40 @@
+
+// Estilos para el main
+.mainShop {
+    // Estilos para .contenedorShop dentro de main shop
+    .contenedorShop {
+        display: grid;
+        background-color: #FFFFFA;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 20px; // Espacio entre las imágenes
+
+        // Estilos para .grilla dentro de .contenedorShop
+        .grilla {
+            display: grid;
+            grid-template-rows: auto 1fr; // Ajuste en las filas
+            gap: 10px; // Espacio entre los elementos dentro de .grilla
+            justify-items: center; // Centra los elementos horizontalmente
+            align-items: center; // Centra los elementos verticalmente
+            text-align: center; // Alinea el texto al centro
+            border: 3px solid #000103;
+            padding: 10px; // Añade un espacio interno
+
+            // Estilos para .producto dentro de .grilla
+            .producto {
+                width: 100%; // Ajuste en el ancho
+                height: auto; // Ajuste en la altura
+                max-height: 200px; // Altura máxima de la imagen
+                object-fit: cover;
+            }
+
+            // Estilos para .precios dentro de .grilla
+            .precios {
+                font-family: "Montserrat", sans-serif;
+                font-size: 1.5rem; // Tamaño de fuente ajustado
+                color: #FFFFFA; // Color del texto
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+@media (max-width:1024px){
+    .contenedorShop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // Por defecto, 3 columnas
+        border: 50px; // No parece una propiedad CSS válida, deberías ajustarla o eliminarla
+        gap: 20px; // Agregué un espacio entre las celdas para mejorar el diseño
+    }
+    
+    .botonCompras {
+        height: 80px;
+        width: 60vw;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 768px){
+    .positionRelative{
+        z-index: 1;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+    .logoUl{
+        display: none;
+
+    }
+    .contenedorShop{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedorCompras, .contenedorAyuda {
+        display: grid;
+        width: 80%;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .botonCompras{
+        height: 70px;
+        width: 50vw;
+        font-size: 1rem;
+
+    }
+    .contenedorAyuda{
+        width: 70vw;
+    }
+
+    .positionAbsolute a{
+        font-size: .7rem;
+        width: 100%;
+
+    }
+    .usuarioStyle{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-content:center ;
+    }
+    input.inicioSesion{
+        display: grid;
+        width: 100%;
+        justify-items: center;
+    }
+    .olvidarContraseña{
+        display: contents;
+        justify-content: center;
+
+    }
+    .crearCuenta {
+        display: contents;
+        justify-content: center;
+    }
+
+    footer div li{
+        width: 15%;
+        justify-items: center;
+    }
+    .block{
+        display: block;
+    }
+    .botonSuscribirse{
+        display: inline-block;
+    }
+    .faqStyle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .faqStyle .style {
+        width: 100%;
+    }
+    // header
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        label{display: block;
+            position: relative;
+            right: 25px;
+            img{
+                width: 50px;
+            }
+        
+        }
+    #btnMenu:checked ~ .menu{
+        visibility: visible;
+        opacity: 1;
+        z-index: 999;
+    }
+    .menu{
+        position: absolute;
+        top: 102px;
+        background-color: #000103;
+        width: 100%;
+        visibility: hidden;
+        transition: visibility 1s, opacity 1s ease;
+        opacity: 0;
+        border: 1px #515052;
+        margin: 5px
+    }
+        
+        .logoMenu{
+            display: block;
+            width: 100px;
+            margin-left: 25px;}
+            
+            img{
+                display: block;
+                width: 100px;
+            }
+
+    }
+}

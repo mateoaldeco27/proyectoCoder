@@ -1,0 +1,26 @@
+.faqStyle {
+    padding: 30px;
+    margin: 10px;
+    font-size: 20px;
+    color: #FFFFFA;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    background-color: #000103;
+    height: 100%;
+    width: 100%;
+
+    .block {
+        display: block;
+        margin: 10px; 
+    }
+
+    .botonSuscribirse {
+        display: block;
+        margin: 10px;
+    }
+
+    .style {
+        text-decoration: underline;
+    }
+}

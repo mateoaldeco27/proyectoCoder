@@ -2,3 +2,4 @@
 img_cache
 *.txt
 background.jpg
+node_modules

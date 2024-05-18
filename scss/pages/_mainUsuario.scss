@@ -1,0 +1,39 @@
+// Estilos para el main usuario
+.usuarioStyle {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    font-size: 20px;
+    color: #FFFFFA;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    background-color: #000103;
+    height: 100%;
+    width: 100%;
+
+    // Estilos para .olvidarContraseña dentro de .usuarioStyle
+    .olvidarContraseña {
+        height: 15px;
+        width: 100%;
+        font-size: 10px;
+        text-align: right;
+    }
+
+    // Estilos para .inicioSesion dentro de .usuarioStyle
+    .inicioSesion {
+        height: 30px;
+        width: 100%;
+        justify-items: center;
+    }
+
+    // Estilos para .crearCuenta dentro de .usuarioStyle
+    .crearCuenta {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,49 @@
+// _header.scss
+
+header {
+    background-color: #000103;
+    border: 1px solid #515052;
+    margin: 5px;
+    #btnMenu, label {
+        display: none;
+    }
+
+    .logoMenu {
+        display: none;
+    }
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 15px 20px;
+            align-items: center;
+            margin-bottom: 0px;
+
+            li {
+                display: inline-block;
+                padding: 10px;
+                font-size: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: #FFFFFA;
+                    font-family: "Montserrat", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 500;
+                    &:hover{
+                        text-decoration: underline #FFFFFA;
+                    }
+
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
