@@ -29,6 +29,9 @@ header nav ul {
   align-items: center;
   margin-bottom: 0px;
 }
+header nav ul img {
+  width: 150px;
+}
 header nav ul li {
   display: inline-block;
   padding: 10px;
@@ -43,9 +46,6 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   text-decoration: underline #FFFFFA;
-}
-header nav ul li a img {
-  width: 150px;
 }
 
 .mainIndex {
@@ -193,34 +193,39 @@ header nav ul li a img {
   text-decoration: underline;
 }
 
-.mainShop .contenedorShop {
+main .contenedorShop {
   display: grid;
   background-color: #FFFFFA;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
-.mainShop .contenedorShop .grilla {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 10px;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  border: 3px solid #000103;
-  padding: 10px;
-}
-.mainShop .contenedorShop .grilla .producto {
+main .contenedorShop .grilla {
+  background-color: #FFFFFA;
   width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: cover;
+  height: 100%;
+  display: grid;
+  border: 3px solid #000103;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+  justify-content: center;
+  align-items: center;
 }
-.mainShop .contenedorShop .grilla .precios {
+main .contenedorShop .grilla .producto {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+main .contenedorShop .grilla .precios {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  color: #FFFFFA;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-family: 10vw;
 }
 
 .usuarioStyle {
