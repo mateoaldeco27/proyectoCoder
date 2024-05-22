@@ -183,11 +183,23 @@ header nav ul li a:hover {
 }
 .faqStyle .block {
   display: block;
-  margin: 10px;
 }
 .faqStyle .botonSuscribirse {
   display: block;
-  margin: 10px;
+  margin-top: 7px;
+  color: #000103;
+  text-decoration: none;
+  background-color: #FFFFFA;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 40px;
 }
 .faqStyle .style {
   text-decoration: underline;
@@ -262,15 +274,34 @@ main .contenedorShop .grilla .precios {
 }
 
 footer {
-  background-color: #000103;
   border: 1px solid #515052;
   margin: 5px;
   height: 100px;
   width: 100%;
+  text-decoration: none;
+  background-color: #515052;
 }
-footer div {
+footer .contenido {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: #FFFFFA;
+  text-align: center;
+  text-decoration: none;
+}
+footer .copyright {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: #FFFFFA;
+  text-align: center;
+  text-decoration: none;
+  background-color: #515052;
+}
+footer .contacto {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-size: 20px;
   color: #FFFFFA;
@@ -281,12 +312,13 @@ footer div {
   height: 100%;
   width: 100%;
   text-align: center;
+  margin-top: 10px;
 }
-footer div li {
+footer .contacto li {
   display: inline-block;
   width: 10%;
 }
-footer div li img {
+footer .contacto li img {
   width: 60%;
   height: 60%;
 }
@@ -363,8 +395,11 @@ footer div li img {
   .block {
     display: block;
   }
-  .botonSuscribirse {
-    display: inline-block;
+  .faqStyle .botonSuscribirse {
+    font-size: 1rem;
+    width: 50vw;
+    margin: 10px auto;
+    height: 50px;
   }
   .faqStyle {
     display: flex;

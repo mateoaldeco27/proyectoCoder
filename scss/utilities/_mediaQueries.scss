@@ -82,9 +82,13 @@
     .block{
         display: block;
     }
-    .botonSuscribirse{
-        display: inline-block;
+    .faqStyle .botonSuscribirse{
+        font-size: 1rem;
+        width: 50vw;
+        margin: 10px auto;
+        height: 50px;
     }
+    
     .faqStyle {
         display: flex;
         flex-direction: column;
