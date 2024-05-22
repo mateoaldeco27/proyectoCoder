@@ -391,8 +391,8 @@ footer .contacto li img {
     display: contents;
     justify-content: center;
   }
-  footer div li {
-    width: 15%;
+  footer .wrapper .contacto li {
+    width: 20%;
     justify-items: center;
   }
   .block {
