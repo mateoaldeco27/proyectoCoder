@@ -1,4 +1,13 @@
 main {
+    .drop{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-size: 80%;
+    }
     .contenedorShop {
         display: grid;
         background-color: #FFFFFA;
@@ -22,7 +31,6 @@ main {
                 justify-content: center;
                 align-items: center;
             }
-  
             .precios {
                 display: grid;
                 justify-content: center;
