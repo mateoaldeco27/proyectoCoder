@@ -162,7 +162,6 @@ header nav ul li a:hover {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-size: 1.5rem;
   line-height: 0.8rem;
   border: 2px solid #FFFFFA;
   align-items: center;
@@ -345,11 +344,6 @@ footer .contacto li img {
     border: 50px;
     gap: 20px;
   }
-  .botonCompras {
-    height: 80px;
-    width: 60vw;
-    font-size: 1rem;
-  }
 }
 @media (max-width: 768px) {
   .positionRelative {
@@ -375,10 +369,10 @@ footer .contacto li img {
     margin: 5px;
     padding: 5px;
   }
-  .botonCompras {
+  .contenedorCarrito .botonCompras {
     height: 70px;
     width: 50vw;
-    font-size: 1rem;
+    font-size: 70%;
   }
   .contenedorAyuda {
     width: 70vw;
