@@ -6,42 +6,15 @@
         gap: 20px; // Agregué un espacio entre las celdas para mejorar el diseño
     }
     
-    main .contenedorCarrito .contenedorCompras div .botonCompras {
-        font-size: 1rem;
+    .botonCompras {
+        height: 80px;
         width: 60vw;
-        margin: 10px auto;
-        height: 60px;
+        font-size: 1rem;
     }
 }
 
 
 @media (max-width: 768px){
-
-    footer {
-        .wrapper{
-        border: 1px solid #515052;
-        height: 100%;
-        width: 100%;
-        text-decoration: none;
-        background-color: #515052;
-            .contacto {
-                ul{
-                    width: none;
-                    height: none;
-                    li {
-                        display: inline-block;
-                        width: 7%;
-                        height: 60%;
-                        text-align: center;
-    
-                        img {
-                            display: flex;
-                            width: 100%;
-                            height:100%;
-                    }
-            }
-        }
-
     .positionRelative{
         z-index: 1;
     }
@@ -53,10 +26,10 @@
         display: none;
 
     }
-    main .contenedorShop{
+    .contenedorShop{
         display: grid;
         background-color: #FFFFFA;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-items: center;
         }
@@ -172,6 +145,3 @@
 
     }
 }
-}
-}}
-

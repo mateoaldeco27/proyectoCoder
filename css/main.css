@@ -205,23 +205,29 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-main .drop {
-  display: grid;
+.drop {
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 40px;
+}
+.drop .drop1 {
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 80%;
+  font-size: 1.5rem;
 }
-main .contenedorShop {
+
+.contenedorShop {
   display: grid;
   background-color: #FFFFFA;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
 }
-main .contenedorShop .grilla {
+.contenedorShop .grilla {
   background-color: #FFFFFA;
   width: 100%;
   height: 100%;
@@ -232,14 +238,14 @@ main .contenedorShop .grilla {
   justify-content: center;
   align-items: center;
 }
-main .contenedorShop .grilla .producto {
+.contenedorShop .grilla .producto {
   width: 200px;
   height: 200px;
   object-fit: cover;
   justify-content: center;
   align-items: center;
 }
-main .contenedorShop .grilla .precios {
+.contenedorShop .grilla .precios {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -282,52 +288,23 @@ main .contenedorShop .grilla .precios {
   text-align: center;
 }
 
-footer .wrapper {
+footer {
   border: 1px solid #515052;
-  height: 100%;
-  width: 99%;
+  margin: 5px;
+  height: 100px;
+  width: 100%;
   text-decoration: none;
   background-color: #515052;
 }
-footer .wrapper .contenido {
-  width: 100%;
-  height: 40px;
-}
-footer .wrapper .contenido p {
-  text-align: center;
+footer .contenido {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   color: #FFFFFA;
-  text-decoration: none;
-  text-justify: center;
-}
-footer .wrapper .contacto {
-  display: flex;
-  width: 100%;
-  height: 80px;
-  align-items: center;
-  justify-content: center;
-}
-footer .wrapper .contacto ul {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-footer .wrapper .contacto ul li {
-  display: inline-block;
-  width: 7%;
-  height: 95%;
   text-align: center;
+  text-decoration: none;
 }
-footer .wrapper .contacto ul li img {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-footer .wrapper .contacto .copyright p {
+footer .copyright {
   display: block;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -335,6 +312,30 @@ footer .wrapper .contacto .copyright p {
   color: #FFFFFA;
   text-align: center;
   text-decoration: none;
+  background-color: #515052;
+}
+footer .contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #FFFFFA;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  background-color: #515052;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+footer .contacto li {
+  display: inline-block;
+  width: 10%;
+}
+footer .contacto li img {
+  width: 60%;
+  height: 60%;
 }
 
 @media (max-width: 1024px) {
@@ -344,131 +345,108 @@ footer .wrapper .contacto .copyright p {
     border: 50px;
     gap: 20px;
   }
-  main .contenedorCarrito .contenedorCompras div .botonCompras {
-    font-size: 1rem;
+  .botonCompras {
+    height: 80px;
     width: 60vw;
-    margin: 10px auto;
-    height: 60px;
+    font-size: 1rem;
   }
 }
 @media (max-width: 768px) {
-  footer .wrapper {
-    border: 1px solid #515052;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    background-color: #515052;
-  }
-  footer .wrapper .contacto ul {
-    width: none;
-    height: none;
-  }
-  footer .wrapper .contacto ul li {
-    display: inline-block;
-    width: 7%;
-    height: 60%;
-    text-align: center;
-  }
-  footer .wrapper .contacto ul li img {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-  footer .wrapper .contacto .positionRelative {
+  .positionRelative {
     z-index: 1;
   }
-  footer .wrapper .contacto .menu ul {
+  .menu ul {
     flex-direction: column;
   }
-  footer .wrapper .contacto .logoUl {
+  .logoUl {
     display: none;
   }
-  footer .wrapper .contacto main .contenedorShop {
+  .contenedorShop {
     display: grid;
     background-color: #FFFFFA;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
   }
-  footer .wrapper .contacto .contenedorCompras, footer .wrapper .contacto .contenedorAyuda {
+  .contenedorCompras, .contenedorAyuda {
     display: grid;
     width: 80%;
     text-align: center;
     margin: 5px;
     padding: 5px;
   }
-  footer .wrapper .contacto .botonCompras {
+  .botonCompras {
     height: 70px;
     width: 50vw;
     font-size: 1rem;
   }
-  footer .wrapper .contacto .contenedorAyuda {
+  .contenedorAyuda {
     width: 70vw;
   }
-  footer .wrapper .contacto .positionAbsolute a {
+  .positionAbsolute a {
     font-size: 0.7rem;
     width: 100%;
   }
-  footer .wrapper .contacto .usuarioStyle {
+  .usuarioStyle {
     display: grid;
     justify-content: center;
     text-align: center;
     align-content: center;
   }
-  footer .wrapper .contacto input.inicioSesion {
+  input.inicioSesion {
     display: grid;
     width: 100%;
     justify-items: center;
   }
-  footer .wrapper .contacto .olvidarContraseña {
+  .olvidarContraseña {
     display: contents;
     justify-content: center;
   }
-  footer .wrapper .contacto .crearCuenta {
+  .crearCuenta {
     display: contents;
     justify-content: center;
   }
-  footer .wrapper .contacto footer .wrapper .contacto li {
+  footer .wrapper .contacto li {
     width: 20%;
     justify-items: center;
   }
-  footer .wrapper .contacto .block {
+  .block {
     display: block;
   }
-  footer .wrapper .contacto .faqStyle .botonSuscribirse {
+  .faqStyle .botonSuscribirse {
     font-size: 1rem;
     width: 50vw;
     margin: 10px auto;
     height: 50px;
   }
-  footer .wrapper .contacto .faqStyle {
+  .faqStyle {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  footer .wrapper .contacto .faqStyle .style {
+  .faqStyle .style {
     width: 100%;
   }
-  footer .wrapper .contacto header {
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  footer .wrapper .contacto header label {
+  header label {
     display: block;
     position: relative;
     right: 25px;
   }
-  footer .wrapper .contacto header label img {
+  header label img {
     width: 50px;
   }
-  footer .wrapper .contacto header #btnMenu:checked ~ .menu {
+  header #btnMenu:checked ~ .menu {
     visibility: visible;
     opacity: 1;
     z-index: 999;
   }
-  footer .wrapper .contacto header .menu {
+  header .menu {
     position: absolute;
     top: 102px;
     background-color: #000103;
@@ -479,12 +457,12 @@ footer .wrapper .contacto .copyright p {
     border: 1px #515052;
     margin: 5px;
   }
-  footer .wrapper .contacto header .logoMenu {
+  header .logoMenu {
     display: block;
     width: 100px;
     margin-left: 25px;
   }
-  footer .wrapper .contacto header img {
+  header img {
     display: block;
     width: 100px;
   }
